@@ -16,7 +16,7 @@ export const getCountries = async () => {
 export const getLatLon = async (city, country) => {
     let response; 
     try {
-        response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${APIKEY}`)
+        response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${APIKEY}`)
     } catch (err) {
         console.error(err)
     }
